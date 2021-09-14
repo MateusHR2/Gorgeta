@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cálculo de Gorjeta</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+<script src = javascript.js></script>
+</head>
+<body>
+    <div class="container">
+    <h1>Calculadora de Gorjeta</h1>
+    <div class="wrapper">
+    
+    <p>Quantia da Conta</p>
+    <input type="text" id="amount" 
+    placeholder="Quantia a ser paga"> R$
+    
+    
+    <p>Como foi o Serviço?</p>
+            
+            <select id="services">
+                <option selected disabled hidden>
+                    Selecione
+                </option>
+                <option value="0.30">30% - Excelente</option>
+                <option value="0.20">20% - Bom</option>
+                <option value="0.15">15% - Razoável</option>
+                <option value="0.10">10% - Ruim</option>
+                <option value="0.05">5%  - Péssimo</option>
+            </select>
+            
+            
+            <p>Total de Pessoas</p>
+            
+            <input type="text" id="persons"
+                placeholder="Pessoas dividindo a conta">
+                <br><br>
+            <button id="calculate">Calcular</button>
+        </div>
+        
+        <div class="tip">
+        
+        <p>Quantia da Gorjeta</p>
+            
+            <span id="total">0</span> R$
+            <span id="each">cada</span>
+        </div>
+    </div>
+</body>
+</html>
